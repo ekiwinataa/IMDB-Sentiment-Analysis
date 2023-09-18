@@ -4,7 +4,7 @@ from utils import preprocessing_text
 
 st.set_page_config(
     page_title="IMDB Sentiment Analysis",
-    page_icon=":pig:"
+    page_icon=":movie_camera:"
 )
 
 if 'model' not in st.session_state:
@@ -25,4 +25,4 @@ if st.button('Analyze'):
         result = 'Negative Review'
     st.write('Sentiment:', result)
 else:
-    st.write('waiting')
+    st.write('Click to Analyze')
